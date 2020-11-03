@@ -32,7 +32,7 @@ description     : "Personal blog for TIL"
 port            : 
 host            : 
 url             : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl         : theresanicdao@github.io # the subpath of your site, e.g. "/blog"
+baseurl         : theresanicdao.github.io # the subpath of your site, e.g. "/blog"
 repository      : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 github_username :  theresanicdao
 
