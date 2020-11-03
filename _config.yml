@@ -31,10 +31,10 @@ name            : "Ma. Theresa Nicdao"
 description     : "Personal blog for TIL"
 port            : 
 host            : 
-url             : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl         : theresanicdao.github.io # the subpath of your site, e.g. "/blog"
+url             : https://theresanicdao.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl         : # the subpath of your site, e.g. "/blog"
 repository      : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-github_username :  theresanicdao
+github_username : 
 
 search                   : # true, false (default)
 search_full_content      : # true, false (default)
