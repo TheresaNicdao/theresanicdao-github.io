@@ -1,0 +1,23 @@
+Theresa Nicdao:
+  name  : "Ma. Theresa Nicdao"
+  bio   : "Software Engineer"
+  avatar: /assets/images/author.png
+  links:
+    - label   : "Email"
+      icon    : "fas fa-fw fa-envelope-square"
+      url     : mailto:mtsnicdao@gmail.com
+    - label   : "Website"
+      icon    : "fas fa-fw fa-link"
+      # url   : "https://your-website.com"
+    - label   : "Instagram"
+      icon    : "fab fa-fw fa-instagram-square"
+      url     : "https://instagram.com/thee_threesah"
+    - label   : "Facebook"
+      icon    : "fab fa-fw fa-facebook-square"
+      # url   : "https://facebook.com/"
+    - label   : "GitHub"
+      icon    : "fab fa-fw fa-github"
+      url     : "https://github.com/theresanicdao/"
+    - label   : "Linkedin"
+      icon    : "fab fa-fw fa-linkedin"
+      url     : "https://www.linkedin.com/in/ma-theresa-nicdao-2008b184/"

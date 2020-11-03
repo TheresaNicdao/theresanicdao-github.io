@@ -1,0 +1,16 @@
+main:
+  - title: "About Me"
+    url: /portfolio/
+    description: "Want to know more about the author? Click here"
+  - title: "Posts"
+    url: /blog/
+    description: "See all posts here"
+  - title: "Archive"
+    url: /year-archive/
+    description: "Archived posts are here"
+  - title: "Search"
+    url: /search/
+    description: "Looking for something? Search here"
+  - title: "External Link"
+    url: https://google.com
+    description: "Google here"
