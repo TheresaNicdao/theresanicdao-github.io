@@ -19,7 +19,8 @@
 # in the templates via {{ site.myvariable }}.
 
 # Theme Settings
-theme: minimal-mistakes-jekyll
+#theme: minimal-mistakes-jekyll
+remote_theme: "mmistakes/minimal-mistakes@4.21.0"
 
 
 # Site Settings
@@ -111,6 +112,7 @@ pagination:
 plugins:
   - jekyll-feed
   - jekyll-paginate-v2
+  - jekyll-include-cache
 
 whitelist:
   – jekyll-paginate-v2
