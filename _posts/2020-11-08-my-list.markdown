@@ -1,0 +1,17 @@
+---
+title:  "My List"
+date:   "2020-11-08"
+categories: list
+permalink: /posts/:title
+tags: 
+  - list
+---
+
+Here is the list of topics I aim to learn and understand. Each topic will have their own post.
+
+- [ ] Own straightforward markdown cheat sheet 
+- [ ] What I need to know about Jekyll
+- [ ] How to properly setup SSH (whether in _windows_ or _mac_)
+- [ ] What I need to know about Docker
+- [ ] What I need to know about Jenkins
+- [ ] Basic Python cheat sheet
