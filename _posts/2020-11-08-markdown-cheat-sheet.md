@@ -167,16 +167,16 @@ ___bold and italicized text too___
 
 **Syntax:**
 ```
-Definition List
-: Sublist 1
-: Sublist 2
+References
+: [Markdown Guide Basic Syntax](https://www.markdownguide.org/basic-syntax/)
+: [Markdown Guide Extended Syntax](https://www.markdownguide.org/extended-syntax/)
 ```
 
 **Rendered Output:**
 
-Definition List
-: Sublist 1
-: Sublist 2
+References
+: [Markdown Guide Basic Syntax](https://www.markdownguide.org/basic-syntax/)
+: [Markdown Guide Extended Syntax](https://www.markdownguide.org/extended-syntax/)
 
 ***
 
