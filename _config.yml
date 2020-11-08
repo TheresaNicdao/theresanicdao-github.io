@@ -29,8 +29,8 @@ title           : Today I Learned
 subtitle        : # site tagline that appears below site title in masthead
 name            : "Ma. Theresa Nicdao"
 description     : "Personal blog for TIL"
-port            : 
-host            : 
+port            : 4000
+host            : "0.0.0.0"
 url             : https://theresanicdao.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl         : # the subpath of your site, e.g. "/blog"
 repository      : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
