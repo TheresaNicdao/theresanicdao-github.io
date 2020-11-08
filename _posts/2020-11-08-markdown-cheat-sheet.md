@@ -1,9 +1,14 @@
 ---
 title: "Markdown Cheat Sheet"
 date: "2020-11-08"
+categories:
+- markdown
+- cheat-sheet
 tag:
 - markdown
-- cheat sheet
+- cheat-sheet
+header:
+  teaser: /assets/images/teasers/markdown-logo.svg
 ---
 
 ## Headings[^1]
