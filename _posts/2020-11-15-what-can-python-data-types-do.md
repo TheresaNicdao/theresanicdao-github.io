@@ -441,3 +441,4 @@ Ordered collection of similar of different data types
 
 References:
 : [Teaser Image](https://www.educba.com/python-variable-types/)
+: [Python Data Types](https://www.geeksforgeeks.org/python-data-types/)
