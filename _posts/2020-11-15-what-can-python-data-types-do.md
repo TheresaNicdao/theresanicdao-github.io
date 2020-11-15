@@ -21,9 +21,9 @@ header:
     + String
     + Tuple
     + List
++ Boolean
 + Dictionary
 + Set
-+ Boolean
 
 ***
 
@@ -31,10 +31,156 @@ header:
 
 Use **`type()`** method   
 
+***
+
+## Boolean
++ Either *True* or *False*
+
+## Dictionary
++ {}
++ Key-value pair
+
+  **Operations in List**
+
+    Creating dictionary
+    ```
+    # Empty dictionary
+    dct = {}
+
+    # With initial values
+    dct = {
+      'key1' : 1,
+      'key2' : 2
+    }
+    ```
+
+    Accessing element
+    ```
+    # Using key - may result to KeyError if the key doesn't exist
+    val = dct['key1']
+
+    # Using get - safer since it can have a default value
+    val = dct.get('key1)
+    val = dct.get('key1', None)
+
+    # Get all keys
+    keys = dct.keys()
+
+    # Get all values
+    vals = dct.values()
+
+    # Get all key-value pairs in tuple
+    pairs = dct.items()
+    ```
+
+    Add element
+    ```
+    # Add new key-value pair
+    dct['new_key'] = 'new_value'
+
+    # Add elements from another dictionary
+    dct.update(other_dct)
+    ```
+
+    Removing element
+    ```
+    # Remove a key
+    del dct['key1]
+
+    # Remove and return key's value
+    val = dct.pop('key1')
+
+    # Remove all items
+    dct.clear()
+
+    # Remove the whole dictionary
+    del dct
+    ```
+    
+## Set
++ set()
++ Unordered collection, iterable, mutable, and has no duplicate
+
+  **Operations in List**
+
+    Creating set
+    ```
+    # Empty dictionary
+    st = set()
+
+    # With initial values
+    st = set(1,2,3)
+
+    # From a list
+    lst = [1,2,1,3]
+    st = set(lst)
+    ```
+
+    Accessing element
+    ```
+    # Since it is unordered, there is no indexing
+    # Can use loop
+    for i in st:
+      print(i)
+
+    # Use in keyword
+    val = 1
+    if val in st:
+      print(val)
+    ```
+
+    Adding element
+    ```
+    # Add one element at a time
+    st = set(1,2,3)
+    st.add(4)
+
+    # Add multiple elements
+    st.update([4,5,6])
+    ```
+
+    Removing element
+    ```
+    # Use built-in remove() - will produce error if the element doesnt exist
+    st.remove(1)
+
+    # Use discard() - set will remain unchanged if element doesnt exist
+    st.discard(1)
+
+    # Remove all elements
+    st.clear()
+    ```
+
+    Union, Difference, Intersection
+    ```
+    set1 = set(1,2,3)
+    set2 = set(3,4,5)
+
+    # Get union of 2 or more sets
+    set1.uniion(set2)
+
+    # Return the difference between sets as a new set
+    set3 = set1.difference(set2)
+
+    # Remove all elements of another set from a list
+    set1.difference_update(set2)
+
+    # Get intersection of 2 sets as a new set
+    set3 = set1.intersection(set2)
+
+    # Returns True if 2 sets have null intersetion
+    set1.isdisjoint(set2)
+
+    # Returns True if another set contains a set
+    set1.issubset(set2)
+
+    # Returnds True if a set contains another set
+    set1.issuperset(set2)
+    ```
 
 ## Numeric Types
 
-> Represent data with numeric value
+Represent data with numeric value
 
 ### Integer
 + `int`
@@ -288,156 +434,6 @@ Ordered collection of similar of different data types
     # Since tuple is immutable, we cannot delete an element only, but the whole tuple
     del(tuple)
     ```
-
-***
-
-## Dictionary
-+ {}
-+ Key-value pair
-
-  **Operations in List**
-
-    Creating dictionary
-    ```
-    # Empty dictionary
-    dct = {}
-
-    # With initial values
-    dct = {
-      'key1' : 1,
-      'key2' : 2
-    }
-    ```
-
-    Accessing element
-    ```
-    # Using key - may result to KeyError if the key doesn't exist
-    val = dct['key1']
-
-    # Using get - safer since it can have a default value
-    val = dct.get('key1)
-    val = dct.get('key1', None)
-
-    # Get all keys
-    keys = dct.keys()
-
-    # Get all values
-    vals = dct.values()
-
-    # Get all key-value pairs in tuple
-    pairs = dct.items()
-    ```
-
-    Add element
-    ```
-    # Add new key-value pair
-    dct['new_key'] = 'new_value'
-
-    # Add elements from another dictionary
-    dct.update(other_dct)
-    ```
-
-    Removing element
-    ```
-    # Remove a key
-    del dct['key1]
-
-    # Remove and return key's value
-    val = dct.pop('key1')
-
-    # Remove all items
-    dct.clear()
-
-    # Remove the whole dictionary
-    del dct
-    ```
-    
-## Set
-+ set()
-+ Unordered collection, iterable, mutable, and has no duplicate
-
-  **Operations in List**
-
-    Creating set
-    ```
-    # Empty dictionary
-    st = set()
-
-    # With initial values
-    st = set(1,2,3)
-
-    # From a list
-    lst = [1,2,1,3]
-    st = set(lst)
-    ```
-
-    Accessing element
-    ```
-    # Since it is unordered, there is no indexing
-    # Can use loop
-    for i in st:
-      print(i)
-
-    # Use in keyword
-    val = 1
-    if val in st:
-      print(val)
-    ```
-
-    Adding element
-    ```
-    # Add one element at a time
-    st = set(1,2,3)
-    st.add(4)
-
-    # Add multiple elements
-    st.update([4,5,6])
-    ```
-
-    Removing element
-    ```
-    # Use built-in remove() - will produce error if the element doesnt exist
-    st.remove(1)
-
-    # Use discard() - set will remain unchanged if element doesnt exist
-    st.discard(1)
-
-    # Remove all elements
-    st.clear()
-    ```
-
-    Union, Difference, Intersection
-    ```
-    set1 = set(1,2,3)
-    set2 = set(3,4,5)
-
-    # Get union of 2 or more sets
-    set1.uniion(set2)
-
-    # Return the difference between sets as a new set
-    set3 = set1.difference(set2)
-
-    # Remove all elements of another set from a list
-    set1.difference_update(set2)
-
-    # Get intersection of 2 sets as a new set
-    set3 = set1.intersection(set2)
-
-    # Returns True if 2 sets have null intersetion
-    set1.isdisjoint(set2)
-
-    # Returns True if another set contains a set
-    set1.issubset(set2)
-
-    # Returnds True if a set contains another set
-    set1.issuperset(set2)
-    ```
-
-## Boolean
-+ Either *True* or *False*
-
-
-
 
 References:
 : [Teaser Image](https://www.educba.com/python-variable-types/)
