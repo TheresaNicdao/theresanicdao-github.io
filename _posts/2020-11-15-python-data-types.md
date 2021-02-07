@@ -8,7 +8,7 @@ tags:
 - python
 - data-type
 header:
-  teaser: /assets/images/teasers/python-data-types.png
+  teaser: /assets/images/posts/python-data-types.png
 ---
 
 **Data type** is a data classification which tells the compiler/interpreter how the programmer intends to use the data. It defines the set of rules and operations that can be applied to it. The most common data types that exist in majority of programming languages are `integer`, `float`, `character`, `string`, and `boolean`. For this discussion, we will focus on the standard data types in Python programming language. 
@@ -66,7 +66,7 @@ sample_int = 123456
 # is the same as
 sample_int = 1_234_456
 ```
-+ Integer can also be binary, octal, or hexadecimal values but I won't dwell on that here
++ Integer can also be binary, octal, or hexadecimal values *but I won't dwell on that here*
 
 
 ### Float
@@ -118,6 +118,8 @@ The three basic sequence types are **string**, **tuple**, and **list**.
 | seq.index(x[,i[,j]]) 	| First occurrence of value x at or after index i and before index j 	|
 | seq.count(x)         	| Total number of occurrences of x in seq                            	|
 
+
+
 **Common Mutable Sequence Operations**
 
 | Operation        | Result                                      |
@@ -153,9 +155,9 @@ str_in_single_q = 'This is a string using "single" quotes'
 
 str_in_double_q = "This is a string using 'double' quotes"
 
-str_in_triple_q = "This is
+str_in_triple_q = """This is
                   a string using
-                  'triple quotes'"
+                  'triple quotes'"""
 ```  
 
 + Aside from the common sequence methods, here are some additional operations that can be done to a string:
@@ -334,4 +336,3 @@ str_in_triple_q = "This is
 **References**
 : [Python Data Types](https://www.geeksforgeeks.org/python-data-types/)
 : [Python Docs](https://docs.python.org/3/library/stdtypes.html#:~:text=There%20are%20three%20basic%20sequence,%2C%20tuples%2C%20and%20range%20objects.)
-: [Teaser Image](https://www.educba.com/python-variable-types/)
